@@ -26,7 +26,7 @@ V8, the most commonly used JavaScript engine, uses `PromiseResolver` to manage `
 
 But in JavaScript, we only have the `Promise` constructor, and there is no way to know the `Promise`'s state.
 
-Now you can use this `PromiseResolver` class to create and manage `Promise`s more convinced.
+Now you can use this `PromiseResolver` class to create and manage `Promise`s more conveniently.
 
 ``` ts
 function delay(timeout: number): Promise<void> {
@@ -65,7 +65,7 @@ MyService.on('complete', (id: number, result: number) => {
 });
 
 MyService.on('error', (id: number, message: string) => {
-    manager.reject(id, new Error(message);
+    manager.reject(id, new Error(message));
 });
 
 function callService(payload: number): Promise<number> {
