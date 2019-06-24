@@ -33,6 +33,7 @@ function delay(timeout: number): Promise<void> {
     const resolver = new PromiseResolver<void>();
     setTimeout(() => resolver.resolve(), timeout);
     return resolver.promise;
+}
 ```
 
 ## AsyncOperationManager
