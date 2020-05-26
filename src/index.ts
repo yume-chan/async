@@ -35,9 +35,13 @@ export interface AsyncOperationInfo<T> {
 }
 
 export default class AsyncOperationManager {
-    private operationId: number = 0;
+    private operationId: number;
 
     private operations: Map<number, PromiseResolver<any>> = new Map();
+
+    public constructor(initialId: number = 0) {
+        this.operationId = initialId;
+    }
 
     public add<T>(): AsyncOperationInfo<T> {
         const id = this.operationId++;
