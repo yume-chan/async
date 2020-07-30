@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/yume-chan/async-operation-manager#readme",
   "devDependencies": {
-    "@types/jest": "25.2.3",
+    "@types/jest": "26.0.7",
     "jest": "26.1.0",
     "ts-jest": "26.1.4",
     "typescript": "3.9.7"
