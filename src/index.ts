@@ -28,12 +28,6 @@ export class PromiseResolver<T>{
     }
 }
 
-export interface AsyncOperationInfo<T> {
-    id: number;
-
-    promise: Promise<T>;
-}
-
 export default class AsyncOperationManager {
     private operationId: number;
 
@@ -43,11 +37,11 @@ export default class AsyncOperationManager {
         this.operationId = initialId;
     }
 
-    public add<T>(): AsyncOperationInfo<T> {
+    public add<T>(): [id: number, promise: Promise<T>] {
         const id = this.operationId++;
         const resolver = new PromiseResolver<T>();
         this.operations.set(id, resolver);
-        return { id, promise: resolver.promise };
+        return [id, resolver.promise];
     }
 
     private getResolver(id: number): PromiseResolver<unknown> | null {
@@ -60,17 +54,21 @@ export default class AsyncOperationManager {
         return resolver;
     }
 
-    public resolve<T>(id: number, result: T): void {
+    public resolve<T>(id: number, result: T): boolean {
         const resolver = this.getResolver(id);
         if (resolver !== null) {
             resolver.resolve(result);
+            return true;
         }
+        return false;
     }
 
-    public reject(id: number, reason: Error): void {
+    public reject(id: number, reason: Error): boolean {
         const resolver = this.getResolver(id);
         if (resolver !== null) {
             resolver.reject(reason);
+            return true;
         }
+        return false;
     }
 }
