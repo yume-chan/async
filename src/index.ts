@@ -4,7 +4,7 @@ export class PromiseResolver<T>{
     private _promise: Promise<T>;
     public get promise(): Promise<T> { return this._promise; }
 
-    private _resolve!: (value?: T | PromiseLike<T>) => void;
+    private _resolve!: (value: T | PromiseLike<T>) => void;
     private _reject!: (reason?: any) => void;
 
     private _state: PromiseResolverState = 'running';
@@ -17,7 +17,7 @@ export class PromiseResolver<T>{
         });
     }
 
-    public resolve(value?: T | PromiseLike<T>): void {
+    public resolve(value: T | PromiseLike<T>): void {
         this._resolve(value);
         this._state = 'resolved';
     }
