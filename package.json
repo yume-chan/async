@@ -1,6 +1,6 @@
 {
   "name": "@yume-chan/async-operation-manager",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Utilities to manage RPC operations.",
   "keywords": [
     "RPC"
