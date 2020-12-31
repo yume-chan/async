@@ -1,6 +1,6 @@
 {
   "name": "@yume-chan/async-operation-manager",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Utilities to manage RPC operations.",
   "keywords": [
     "RPC"
@@ -11,13 +11,13 @@
     "email": "cnsimonchan@live.com",
     "url": "https://chensi.moe/blog"
   },
-  "homepage": "https://github.com/yume-chan/typescript-package-scaffold#readme",
+  "homepage": "https://github.com/yume-chan/async-operation-manager#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yume-chan/typescript-package-scaffold.git"
+    "url": "git+https://github.com/yume-chan/async-operation-manager.git"
   },
   "bugs": {
-    "url": "https://github.com/yume-chan/typescript-package-scaffold/issues"
+    "url": "https://github.com/yume-chan/async-operation-manager/issues"
   },
   "main": "lib/index.js",
   "module": "esm/index.js",
