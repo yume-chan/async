@@ -1,5 +1,10 @@
+.github
+.vscode
 coverage
-test
+scripts
+src/**.spec.ts
 
 jest.config.js
 pnpm-lock.yaml
+renovate.json
+tsconfig.json

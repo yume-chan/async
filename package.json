@@ -2,34 +2,39 @@
   "name": "@yume-chan/async-operation-manager",
   "version": "2.1.0",
   "description": "Utilities to manage RPC operations.",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "directories": {
-    "test": "test"
+  "keywords": [
+    "RPC"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Simon Chan",
+    "email": "cnsimonchan@live.com",
+    "url": "https://chensi.moe/blog"
   },
+  "homepage": "https://github.com/yume-chan/typescript-package-scaffold#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yume-chan/typescript-package-scaffold.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yume-chan/typescript-package-scaffold/issues"
+  },
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "dts/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "node scripts/build",
     "test": "jest",
     "coverage": "jest --coverage",
     "prepublishOnly": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yume-chan/async-operation-manager.git"
+  "dependencies": {
+    "tslib": "2.0.3"
   },
-  "keywords": [
-    "async"
-  ],
-  "author": "Simon Chan",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/yume-chan/async-operation-manager/issues"
-  },
-  "homepage": "https://github.com/yume-chan/async-operation-manager#readme",
   "devDependencies": {
-    "@types/jest": "26.0.7",
-    "jest": "26.1.0",
+    "@types/jest": "26.0.14",
+    "jest": "26.6.0",
     "ts-jest": "26.1.4",
-    "typescript": "4.0.2"
+    "typescript": "4.0.3"
   }
 }
