@@ -44,3 +44,5 @@ export default class AsyncOperationManager {
         return false;
     }
 }
+
+export * from './promise-resolver';
