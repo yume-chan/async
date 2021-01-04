@@ -10,6 +10,9 @@
         "outDir": "esm",
         "sourceMap": true,
         "removeComments": true,
+        "declaration": true,
+        "declarationDir": "dts",
+        "declarationMap": true,
         // "jsx": "preserve",                     /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
         // "noEmit": true,                        /* Do not emit outputs. */
         "importHelpers": true, //                 /* Import emit helpers from 'tslib'. */
