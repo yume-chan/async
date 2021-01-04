@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.esm.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "outDir": "cjs",
+    "declaration": true,
+    "declarationDir": "dts",
+    "declarationMap": true,
+  }
+}
