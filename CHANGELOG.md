@@ -1,3 +1,7 @@
+# 2.1.4
+
+* `PromiseResolver#resolve` and `PromiseResolver#reject` are automatically bind to instance.
+
 # 2.1.1
 
 * Add ESModule output.

@@ -17,13 +17,13 @@ export class PromiseResolver<T> {
         });
     }
 
-    public resolve(value: T | PromiseLike<T>): void {
+    public resolve = (value: T | PromiseLike<T>): void => {
         this._resolve(value);
         this._state = 'resolved';
-    }
+    };
 
-    public reject(reason?: any): void {
+    public reject = (reason?: any): void => {
         this._reject(reason);
         this._state = 'rejected';
-    }
+    };
 }
