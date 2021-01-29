@@ -1,5 +1,11 @@
 # Async
 
+![license](https://img.shields.io/npm/l/@yume-chan/async)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/yume-chan/async/Node.js%20CI?label=build)
+![Codecov](https://img.shields.io/codecov/c/github/yume-chan/async?token=Z6KEN9JL2A)
+[![npm version](https://img.shields.io/npm/v/@yume-chan/async)](https://www.npmjs.com/package/@yume-chan/async)
+![npm type definitions](https://img.shields.io/npm/types/@yume-chan/async)
+
 Utils for async programming.
 
 - [PromiseResolver](#promiseresolver)
