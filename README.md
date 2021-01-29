@@ -1,10 +1,9 @@
-# Async Operation Manager
+# Async
 
-This package contains utilities to manage RPC operations.
+Utils for async programming.
 
-- [Async Operation Manager](#Async-Operation-Manager)
-  - [PromiseResolver](#PromiseResolver)
-  - [AsyncOperationManager](#AsyncOperationManager)
+- [PromiseResolver](#promiseresolver)
+- [AsyncOperationManager](#asyncoperationmanager)
 
 ## PromiseResolver
 

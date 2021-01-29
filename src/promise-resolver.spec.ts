@@ -1,33 +1,29 @@
 import { PromiseResolver } from "./promise-resolver";
 
-describe('promise resolver', () => {
-  test('resolve void', () => {
-    const resolver = new PromiseResolver<void>();
+describe('PromiseResolver', () => {
+    it('should be able to resolve with `void`', () => {
+        const resolver = new PromiseResolver<void>();
+        expect(resolver.state).toBe('running');
 
-    expect(resolver.state).toBe('running');
+        resolver.resolve();
+        expect(resolver.state).toBe('resolved');
+        expect(resolver.promise).resolves.toBe(undefined);
+    });
 
-    resolver.resolve();
+    it('should be able to resolve with a value', () => {
+        const resolver = new PromiseResolver<number>();
 
-    expect(resolver.state).toBe('resolved');
-    expect(resolver.promise).resolves.toBe(undefined);
-  });
+        resolver.resolve(42);
+        expect(resolver.state).toBe('resolved');
+        expect(resolver.promise).resolves.toBe(42);
+    });
 
-  test('resolve value', () => {
-    const resolver = new PromiseResolver<number>();
+    it('should be able to reject with anything', () => {
+        const resolver = new PromiseResolver<void>();
 
-    resolver.resolve(42);
-
-    expect(resolver.state).toBe('resolved');
-    expect(resolver.promise).resolves.toBe(42);
-  });
-
-  test('reject', () => {
-    const resolver = new PromiseResolver<void>();
-
-    const message = Date.now().toString();
-    resolver.reject(new Error(message));
-
-    expect(resolver.state).toBe('rejected');
-    expect(resolver.promise).rejects.toHaveProperty('message', message);
-  });
+        const message = Date.now().toString();
+        resolver.reject(new Error(message));
+        expect(resolver.state).toBe('rejected');
+        expect(resolver.promise).rejects.toHaveProperty('message', message);
+    });
 });

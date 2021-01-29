@@ -1,9 +1,10 @@
 {
-    "name": "@yume-chan/async-operation-manager",
+    "name": "@yume-chan/async",
     "version": "2.1.4",
-    "description": "Utilities to manage RPC operations.",
+    "description": "Utils for async programming.",
     "keywords": [
-        "RPC"
+        "async",
+        "util"
     ],
     "license": "MIT",
     "author": {
@@ -11,13 +12,13 @@
         "email": "cnsimonchan@live.com",
         "url": "https://chensi.moe/blog"
     },
-    "homepage": "https://github.com/yume-chan/async-operation-manager#readme",
+    "homepage": "https://github.com/yume-chan/async#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/yume-chan/async-operation-manager.git"
+        "url": "git+https://github.com/yume-chan/async.git"
     },
     "bugs": {
-        "url": "https://github.com/yume-chan/async-operation-manager/issues"
+        "url": "https://github.com/yume-chan/async/issues"
     },
     "main": "cjs/index.js",
     "module": "esm/index.js",
