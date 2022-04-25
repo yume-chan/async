@@ -30,7 +30,7 @@
         "prepublishOnly": "npm run build"
     },
     "dependencies": {
-        "tslib": "2.0.3"
+        "tslib": "2.4.0"
     },
     "devDependencies": {
         "@types/jest": "26.0.19",
