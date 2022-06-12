@@ -1,3 +1,7 @@
+# 2.2.0
+
+* Add `delay` util function.
+
 # 2.1.4
 
 * `PromiseResolver#resolve` and `PromiseResolver#reject` are automatically bind to instance.
