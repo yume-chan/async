@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [16.x, 18.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -34,7 +34,7 @@ jobs:
         key: ${{ runner.os }}-pnpm
 
     - name: Setup PNPM
-      uses: pnpm/action-setup@v1.2.1
+      uses: pnpm/action-setup@v2.2.2
       with:
         version: latest
         run_install: true
