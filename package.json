@@ -1,6 +1,6 @@
 {
     "name": "@yume-chan/async",
-    "version": "4.0.2",
+    "version": "4.1.0",
     "description": "Utils for async programming.",
     "keywords": [
         "async",
@@ -33,7 +33,7 @@
         "@jest/globals": "^29.7.0",
         "jest": "^29.7.0",
         "rimraf": "6.0.1",
-        "ts-jest": "^29.2.5",
-        "typescript": "^5.6.3"
+        "ts-jest": "^29.2.6",
+        "typescript": "^5.8.2"
     }
 }
