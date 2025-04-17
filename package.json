@@ -1,6 +1,7 @@
 {
     "name": "@yume-chan/async",
     "version": "4.1.2",
+    "type": "module",
     "description": "Utils for async programming.",
     "keywords": [
         "async",
