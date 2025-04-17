@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { AsyncOperationManager, delay, PromiseResolver } from './index';
+import { AsyncOperationManager, delay, PromiseResolver } from './index.js';
 
 describe('Index', () => {
     it('should export `AsyncOperationManager`', () => {

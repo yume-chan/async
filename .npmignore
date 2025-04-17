@@ -1,6 +1,7 @@
 .github
 .vscode
 coverage
+test
 src/**.spec.ts
 
 jest.config.js
